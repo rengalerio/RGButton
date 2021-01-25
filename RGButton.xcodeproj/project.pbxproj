@@ -18,6 +18,7 @@
 		682349FD25BE63AB0023DFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682349FB25BE63AB0023DFEE /* LaunchScreen.storyboard */; };
 		68234A0825BE63AC0023DFEE /* RGButtonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A0725BE63AC0023DFEE /* RGButtonExampleTests.swift */; };
 		68234A1325BE63AC0023DFEE /* RGButtonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A1225BE63AC0023DFEE /* RGButtonExampleUITests.swift */; };
+		68234A2425BE69410023DFEE /* RGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A2325BE69410023DFEE /* RGButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		68234A0E25BE63AC0023DFEE /* RGButtonExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGButtonExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68234A1225BE63AC0023DFEE /* RGButtonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGButtonExampleUITests.swift; sourceTree = "<group>"; };
 		68234A1425BE63AC0023DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68234A2325BE69410023DFEE /* RGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				682349D125BE63350023DFEE /* RGButton.h */,
 				682349D225BE63350023DFEE /* Info.plist */,
+				68234A2325BE69410023DFEE /* RGButton.swift */,
 			);
 			path = RGButton;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				TargetAttributes = {
 					682349CD25BE63350023DFEE = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					682349D625BE63360023DFEE = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -380,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68234A2425BE69410023DFEE /* RGButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +587,7 @@
 		682349E325BE63360023DFEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -597,6 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.renielgalerio.rgkit.RGButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +612,7 @@
 		682349E425BE63360023DFEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -628,6 +636,7 @@
 		682349E625BE63360023DFEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RGButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,6 +654,7 @@
 		682349E725BE63360023DFEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RGButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
