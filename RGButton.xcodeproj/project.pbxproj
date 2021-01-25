@@ -19,6 +19,8 @@
 		68234A0825BE63AC0023DFEE /* RGButtonExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A0725BE63AC0023DFEE /* RGButtonExampleTests.swift */; };
 		68234A1325BE63AC0023DFEE /* RGButtonExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A1225BE63AC0023DFEE /* RGButtonExampleUITests.swift */; };
 		68234A2425BE69410023DFEE /* RGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A2325BE69410023DFEE /* RGButton.swift */; };
+		68234A2C25BE9F4A0023DFEE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 68234A2A25BE9F490023DFEE /* LICENSE */; };
+		68234A2D25BE9F4A0023DFEE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 68234A2B25BE9F490023DFEE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		68234A1225BE63AC0023DFEE /* RGButtonExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGButtonExampleUITests.swift; sourceTree = "<group>"; };
 		68234A1425BE63AC0023DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68234A2325BE69410023DFEE /* RGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGButton.swift; sourceTree = "<group>"; };
+		68234A2A25BE9F490023DFEE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		68234A2B25BE9F490023DFEE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		682349C425BE63350023DFEE = {
 			isa = PBXGroup;
 			children = (
+				68234A2A25BE9F490023DFEE /* LICENSE */,
+				68234A2B25BE9F490023DFEE /* README.md */,
 				682349D025BE63350023DFEE /* RGButton */,
 				682349DB25BE63360023DFEE /* RGButtonTests */,
 				682349EF25BE63A60023DFEE /* RGButtonExample */,
@@ -343,6 +349,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68234A2D25BE9F4A0023DFEE /* README.md in Resources */,
+				68234A2C25BE9F4A0023DFEE /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -572,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
