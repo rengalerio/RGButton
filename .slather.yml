@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: RGButton.xcodeproj
+scheme: RGButton
+output_directory: reports
+ignore:
+  - RGButtonTests/*
