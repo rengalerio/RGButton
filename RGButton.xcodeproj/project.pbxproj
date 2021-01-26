@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6812E27E25BFA06600C6C17D /* RGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68234A2325BE69410023DFEE /* RGButton.swift */; };
+		6812E28925BFAA7D00C6C17D /* outlet_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6812E28525BFAA7B00C6C17D /* outlet_1.png */; };
+		6812E28A25BFAA7D00C6C17D /* outlet_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6812E28625BFAA7C00C6C17D /* outlet_2.png */; };
+		6812E28C25BFAA7D00C6C17D /* outlet_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6812E28825BFAA7D00C6C17D /* outlet_3.png */; };
+		6812E29325BFAAFF00C6C17D /* view_hierarchy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6812E29225BFAAFF00C6C17D /* view_hierarchy.png */; };
+		6812E29F25BFADC400C6C17D /* rgbutton.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6812E29E25BFADC400C6C17D /* rgbutton.gif */; };
+		6812E2A625BFB4D600C6C17D /* RGButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6812E2A525BFB4D500C6C17D /* RGButton.podspec */; };
 		682349D825BE63360023DFEE /* RGButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682349CE25BE63350023DFEE /* RGButton.framework */; };
 		682349DD25BE63360023DFEE /* RGButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682349DC25BE63360023DFEE /* RGButtonTests.swift */; };
 		682349DF25BE63360023DFEE /* RGButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 682349D125BE63350023DFEE /* RGButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		682349F125BE63A60023DFEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682349F025BE63A60023DFEE /* AppDelegate.swift */; };
-		682349F325BE63A60023DFEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682349F225BE63A60023DFEE /* SceneDelegate.swift */; };
 		682349F525BE63A60023DFEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682349F425BE63A60023DFEE /* ViewController.swift */; };
 		682349F825BE63A60023DFEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682349F625BE63A60023DFEE /* Main.storyboard */; };
 		682349FA25BE63AB0023DFEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682349F925BE63AB0023DFEE /* Assets.xcassets */; };
@@ -48,6 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6812E28525BFAA7B00C6C17D /* outlet_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outlet_1.png; sourceTree = "<group>"; };
+		6812E28625BFAA7C00C6C17D /* outlet_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outlet_2.png; sourceTree = "<group>"; };
+		6812E28825BFAA7D00C6C17D /* outlet_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outlet_3.png; sourceTree = "<group>"; };
+		6812E29225BFAAFF00C6C17D /* view_hierarchy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_hierarchy.png; sourceTree = "<group>"; };
+		6812E29E25BFADC400C6C17D /* rgbutton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rgbutton.gif; sourceTree = "<group>"; };
+		6812E2A525BFB4D500C6C17D /* RGButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGButton.podspec; sourceTree = "<group>"; };
 		682349CE25BE63350023DFEE /* RGButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RGButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		682349D125BE63350023DFEE /* RGButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGButton.h; sourceTree = "<group>"; };
 		682349D225BE63350023DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +68,6 @@
 		682349DE25BE63360023DFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		682349EE25BE63A60023DFEE /* RGButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		682349F025BE63A60023DFEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		682349F225BE63A60023DFEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		682349F425BE63A60023DFEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		682349F725BE63A60023DFEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		682349F925BE63AB0023DFEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,9 +124,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6812E28425BFAA5E00C6C17D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6812E29E25BFADC400C6C17D /* rgbutton.gif */,
+				6812E29225BFAAFF00C6C17D /* view_hierarchy.png */,
+				6812E28525BFAA7B00C6C17D /* outlet_1.png */,
+				6812E28625BFAA7C00C6C17D /* outlet_2.png */,
+				6812E28825BFAA7D00C6C17D /* outlet_3.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		682349C425BE63350023DFEE = {
 			isa = PBXGroup;
 			children = (
+				6812E2A525BFB4D500C6C17D /* RGButton.podspec */,
+				6812E28425BFAA5E00C6C17D /* Resources */,
 				68234A2A25BE9F490023DFEE /* LICENSE */,
 				68234A2B25BE9F490023DFEE /* README.md */,
 				682349D025BE63350023DFEE /* RGButton */,
@@ -162,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				682349F025BE63A60023DFEE /* AppDelegate.swift */,
-				682349F225BE63A60023DFEE /* SceneDelegate.swift */,
 				682349F425BE63A60023DFEE /* ViewController.swift */,
 				682349F625BE63A60023DFEE /* Main.storyboard */,
 				682349F925BE63AB0023DFEE /* Assets.xcassets */,
@@ -349,6 +373,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6812E28925BFAA7D00C6C17D /* outlet_1.png in Resources */,
+				6812E2A625BFB4D600C6C17D /* RGButton.podspec in Resources */,
+				6812E29325BFAAFF00C6C17D /* view_hierarchy.png in Resources */,
+				6812E28A25BFAA7D00C6C17D /* outlet_2.png in Resources */,
+				6812E28C25BFAA7D00C6C17D /* outlet_3.png in Resources */,
+				6812E29F25BFADC400C6C17D /* rgbutton.gif in Resources */,
 				68234A2D25BE9F4A0023DFEE /* README.md in Resources */,
 				68234A2C25BE9F4A0023DFEE /* LICENSE in Resources */,
 			);
@@ -410,7 +440,7 @@
 			files = (
 				682349F525BE63A60023DFEE /* ViewController.swift in Sources */,
 				682349F125BE63A60023DFEE /* AppDelegate.swift in Sources */,
-				682349F325BE63A60023DFEE /* SceneDelegate.swift in Sources */,
+				6812E27E25BFA06600C6C17D /* RGButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

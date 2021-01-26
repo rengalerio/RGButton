@@ -17,7 +17,7 @@ class RGButton: UIButton {
 	var animates: Bool = true
 
 	@IBInspectable
-	var circularView: Bool = false {
+	var circular: Bool = false {
 		didSet {
 			updateUI()
 		}
@@ -123,6 +123,20 @@ class RGButton: UIButton {
 	   }
 	}
 	
+	@IBInspectable
+	var titleLabelColor: UIColor? = UIColor.black {
+		didSet {
+			updateUI()
+		}
+	}
+	
+	@IBInspectable
+	var imageTintColor: UIColor? = UIColor.black {
+		didSet {
+			updateUI()
+		}
+	}
+	
 	override var titleLabel: UILabel? {
 		get {
 			return self.subviews.filter { (view) -> Bool in
@@ -138,14 +152,74 @@ class RGButton: UIButton {
 			}.first as? UIImageView
 		}
 	}
+	
+	// MARK: - GRADIENT PROPERTIES
+	@IBInspectable var firstColor: UIColor = UIColor.clear {
+	   didSet {
+		   updateUI()
+	   }
+	}
+	
+	@IBInspectable var middleColor: UIColor = UIColor.clear {
+	   didSet {
+		   updateUI()
+	   }
+	}
+	
+	@IBInspectable var lastColor: UIColor = UIColor.clear {
+	   didSet {
+		   updateUI()
+	   }
+	}
+	
+	@IBInspectable var isHorizontal: Bool = true {
+	   didSet {
+		   updateUI()
+	   }
+	}
+	
+	override class var layerClass: AnyClass {
+	   get {
+		   return CAGradientLayer.self
+	   }
+	}
+	
+	var titleLabels: [UILabel] {
+		get {
+			return self.subviews.filter { (view) -> Bool in
+				return view is UILabel
+			} as? [UILabel] ?? []
+		}
+	}
+	
+	var imageViews: [UIImageView] {
+		get {
+			return self.subviews.filter { (view) -> Bool in
+				return view is UIImageView
+			} as? [UIImageView] ?? []
+		}
+	}
 
 	func updateUI() {
 
+		let layer = self.layer as? CAGradientLayer
+		layer?.colors = [firstColor, middleColor, lastColor].map {$0.cgColor}
+		if (isHorizontal) {
+			layer?.startPoint = CGPoint(x: 0, y: 0.5)
+			layer?.endPoint = CGPoint(x: 1, y: 0.5)
+		} else {
+			layer?.startPoint = CGPoint(x: 0.5, y: 0)
+			layer?.endPoint = CGPoint(x: 0.5, y: 1)
+		}
+		
 		self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
 		
 		self.titleLabel?.adjustsFontSizeToFitWidth = true
+		self.titleLabel?.textColor = self.titleLabelColor
+		
+		self.imageView?.tintColor = self.imageTintColor
 
-		if circularView {
+		if circular {
 			self.layer.cornerRadius = self.bounds.size.height * 0.5
 			self.layoutIfNeeded()
 		} else {
@@ -155,6 +229,8 @@ class RGButton: UIButton {
 		if #available(iOS 11.0, *) {
 			self.layer.maskedCorners = cornerMask
 		}
+		
+		
 	}
 
 	override func layoutSubviews() {
