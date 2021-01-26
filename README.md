@@ -1,8 +1,6 @@
 # RGButton
 A CocoaPods library written in Swift
 
-![logo](media/header_btn.png)
-
 [![build](https://api.travis-ci.com/rengalerio/RGButton.svg?branch=master&status=passed)](https://travis-ci.org/rengalerio/RGButton) ![platform](https://img.shields.io/badge/platform-ios-blue.svg) [![license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](./LICENSE.md) [![Version](https://img.shields.io/cocoapods/v/RGButton.svg?style=flat)](http://cocoapods.org/pods/RGButton)
 
 Create your own dynamically designed buttons using RGButton.
