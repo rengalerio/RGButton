@@ -20,7 +20,7 @@ Integrate _RGButton_ into your Xcode project using CocoaPods:
 ```ruby
 use_frameworks!
 
-pod 'RGButton'
+pod 'RGButton', '1.0.3'
 ```
 
 ## Usage
