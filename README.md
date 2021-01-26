@@ -10,8 +10,8 @@ Create your own dynamically designed buttons using RGButton.
 
 Create your customizable buttons like these using the interface builder:
 
-![preview](https://github.com/rengalerio/RGButton/tree/master/Resources/view_hierarchy.png)
-![preview](https://github.com/rengalerio/RGButton/tree/master/Resources/rgbutton.gif)
+![preview](https://github.com/rengalerio/RGButton/blob/master/Resources/view_hierarchy.png)
+![preview](https://github.com/rengalerio/RGButton/blob/master/Resources/rgbutton.gif)
 
 ## Install
 
@@ -31,9 +31,9 @@ Customise your button by adding child views in your UIButton.
 
 Connect `IBOutlet` to your `ViewController` class
 
-![preview](https://github.com/rengalerio/RGButton/tree/master/Resources/outlet_1.png)
-![preview](https://github.com/rengalerio/RGButton/tree/master/Resources/outlet_2.png)
-![preview](https://github.com/rengalerio/RGButton/tree/master/Resources/outlet_3.png)
+![preview](https://github.com/rengalerio/RGButton/blob/master/Resources/outlet_1.png)
+![preview](https://github.com/rengalerio/RGButton/blob/master/Resources/outlet_2.png)
+![preview](https://github.com/rengalerio/RGButton/blob/master/Resources/outlet_3.png)
 
 
 ### Inspectables
